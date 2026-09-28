@@ -30,23 +30,23 @@
 		<h1>Udlejning af dejlig 2-værelses lejlighed i Vestbyen på 64kvm</h1>
 		<section class="introImages">
 			<div class="sliderImages">
-				<img src="./assets/img/livingroom1.webp" alt="">
-				<img src="./assets/img/livingroom2.webp" alt="">
-				<img src="./assets/img/kitchen1.webp" alt="">
-				<img src="./assets/img/kitchen2.webp" alt="">
-				<img src="./assets/img/bathroom.webp" alt="">
-				<img src="./assets/img/balcony.webp" alt="">
-				<img src="" alt="">
+				<img src="./assets/img/livingroom1.webp" alt="Billede af lejlighedens stue">
+				<img src="./assets/img/livingroom2.webp" alt="Billede af lejlighedens stue">
+				<img src="./assets/img/kitchen1.webp" alt="Billede af lejlighedens køkken">
+				<img src="./assets/img/kitchen2.webp" alt="Billede af lejlighedens køkken">
+				<img src="./assets/img/bathroom.webp" alt="Billede af lejlighedens badeværelse">
+				<img src="./assets/img/balcony.webp" alt="Billede af lejlighedens altan">
 			</div>
-			<div class="sliderIndicator"> <i class="fa-solid fa-chevron-right"></i> </div>
+			<div class="sliderButtons">
+				<button class="sliderButton sliderPrevious" aria-label="Forrige billede">
+					<i class="fa-solid fa-chevron-left"></i>
+				</button>
+				<button class="sliderButton sliderNext" aria-label="Næste billede">
+					<i class="fa-solid fa-chevron-right"></i>
+				</button>
+			</div>
 			<button class="floorplanButton">Se plantegning <i class="fa-solid fa-ruler-combined"></i></button>
 		</section>
-		<div class="overlay">
-			<div class="overlayContent">
-				<button class="overlayClose"><i class="fa-solid fa-xmark"></i></button>
-				<img src="./assets/img/floorplan.webp" alt="Plantegning">
-			</div>
-		</div>
 		<section class="apartmentIntro">
 			<div class="infoDivs">
 				<div>9000 Aalborg</div>
@@ -141,8 +141,6 @@
 				</div>
 			</div>
 		</section>
-		<section class="contactInfo"></section>
-		<section class="relatedApartments"></section>
 		<button class="backToOverview">Tilbage til oversigten <i class="fa-solid fa-arrow-up"></i></button>
 	</main>
 	<footer>
@@ -170,5 +168,11 @@
 
 	</footer>
 </body>
+<div class="overlay">
+	<div class="overlayContent">
+		<button class="overlayClose" aria-label="Luk plantegning"><i class="fa-solid fa-xmark"></i></button>
+		<img src="./assets/img/floorplan.webp" alt="Billede af lejlighedens plantegning">
+	</div>
+</div>
 
 </html>
