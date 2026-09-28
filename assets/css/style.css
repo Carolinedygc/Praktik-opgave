@@ -192,13 +192,10 @@ main {
         left: 0;
         right: 0;
         transform: translateY(-50%);
-
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         padding: 0 1rem;
-
         pointer-events: none;
 
         button {
@@ -206,16 +203,14 @@ main {
             width: 45px;
             height: 45px;
             padding: 0;
-
             display: flex;
             justify-content: center;
             align-items: center;
-
             border-radius: 50%;
-            background-color: rgba(239, 239, 239, 0.85);
-
+            background-color: var(--grey);
             cursor: pointer;
         }
+
 
         i {
             padding: 0;
@@ -284,16 +279,22 @@ main {
     top: -1.5rem;
     right: -1.5rem;
     background-color: var(--lightGrey);
-    color: var(--darkGreen);
     border: none;
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
-    font-size: 2rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 0;
     transition: transform 0.2s ease;
+
+
+    i {
+        font-size: 1.5rem;
+        color: var(--darkGreen);
+    }
 }
 
 .overlayClose:hover {
